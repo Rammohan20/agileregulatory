@@ -1,0 +1,24 @@
+@media only screen and (max-width: 480px) {
+    .hero-section ul li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-section ul li .badge {
+        margin: .3rem 0;
+        flex: 0 0 auto;
+        width: 50%
+        
+    }
+
+    .hero-section ul{
+        grid-template-columns:auto auto !important;
+    }
+    .hero-section form{
+        width: 100% !important;
+        margin: .5rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
