@@ -82,7 +82,9 @@
 .app-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
     color: var(--bs-white) !important;
 }
-
+.app-navbar{
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
 
 .app-navbar .navbar .navbar-brand img {
     height: 3rem;
@@ -90,10 +92,6 @@
 
 .app-navbar .navbar .nav-link img {
     height: 2rem;
-}
-
-.app-navbar .navbar .nav-item {
-    margin: 0rem .5rem;
 }
 
 .app-navbar .navbar .nav-item .nav-link {
