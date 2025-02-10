@@ -34,8 +34,6 @@
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    overflow-y: initial !important;
-    overflow:visible !important;
     -webkit-transform: translate3d(0, 0, 0)
 }
 
