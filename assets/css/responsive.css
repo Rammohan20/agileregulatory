@@ -21,4 +21,9 @@
 
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .major-services .nav{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
