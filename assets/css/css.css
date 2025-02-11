@@ -45,6 +45,22 @@
     color: var(--bs-white);
 }
 
+.app-navbar .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    content: "\f078";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 4px;
+    transition: transform 0.2s;
+    vertical-align: 0;
+}
+.app-navbar .dropdown .dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
 
 .app-navbar {
     border-bottom: 1px solid var(--bs-border-color);
@@ -920,22 +936,29 @@
 .career-page {
     margin: 3rem 0;
 }
-.career-page .web-heading{
+.company-overview{
+    margin: 3rem 0 8rem 0;
+}
+.career-page .web-heading
+,.company-overview .web-heading{
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.career-page h3{
+.career-page h3,
+.company-overview h3{
     background-color: var(--bs-warning);
     display: inline-block;
     padding: .50rem;
     font-weight: 600;
     color: var(--bs-white);
 }
-.career-page h5{
+.career-page h5,
+.company-overview h5{
     margin: .50rem 0;
     font-weight: 600;
 }
-.career-page p{
+.career-page p,
+.company-overview p{
     color: var(--bs-secondary);
 }
 
@@ -1054,4 +1077,130 @@
     color: var(--bs-white);
     font-size: 14px;
     margin: 0;
+}
+/* blog-card */
+.blog-card{
+    margin: 3rem 0;
+}
+
+/* cotnact-us */
+/* contact-us */
+
+.contact-us .list-group .list-group-item {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    background: transparent;
+    padding: 1rem 0;
+}
+
+.contact-us .list-group .list-group-item img {
+    height: 2.50rem;
+    width: 2.50rem;
+    border-radius: var(--bs-border-radius);
+    border: 1px solid var(--bs-border-color);
+}
+
+.contact-us .list-group .list-group-item a {
+    text-decoration: none;
+}
+
+.contact-us .list-group .list-group-item a,
+.contact-us .list-group .list-group-item p {
+    color: var(--bs-secondary);
+}
+
+.contact-us .list-group .list-group-item p {
+    margin-bottom: 0;
+}
+
+.contact-us {
+    padding: 3rem 0;
+    background-color: var(--bs-light);
+}
+
+.contact-us .heading-section {
+    margin-bottom: 1.50rem;
+}
+.contact-us .heading-section .heading-title{
+    font-weight: 600;
+}
+
+.contact-us .enquiry-form .card {
+    border: 0;
+    box-shadow: var(--bs-box-shadow-sm);
+    border-radius: 0;
+}
+
+.contact-us .enquiry-form .card .card-body {
+    padding: 1.50rem;
+}
+
+.contact-us .enquiry-form .card .card-body .card-title {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.contact-us .enquiry-form .card .card-body .form-group .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contact-us .enquiry-form .card .card-body .form-group .form-label span {
+    color: var(--bs-danger);
+}
+
+.contact-us .enquiry-form .card .card-body .form-group .form-control {
+    border-radius: 0;
+}
+
+.contact-us .enquiry-form .card .card-body .form-group .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+/* end */
+/* map */
+.map{
+    margin: 2rem 0;
+}
+
+.other-offices-locations {
+    margin: 2rem 0 8rem 0;
+}
+.other-offices-locations .web-heading h3{
+    font-weight: 600;
+}
+
+/* other-offices-locations */
+.other-offices-locations .card {
+    border-width: 2px;
+    width: 100%;
+}
+
+.other-offices-locations .web-heading {
+    margin-bottom: 1.5rem;
+}
+
+.other-offices-locations .card .card-body .card-title {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.other-offices-locations .card .card-body .card-text {
+    color: var(--bs-secondary);
+}
+/* client-feedback */
+.client-feedback{
+    margin: 3rem 0;
+}
+
+.client-feedback .owl-carousel .item card   
+
+.client-feedback .card .card-body img{
+    height: 3rem;
+    width: 3rem;
 }
