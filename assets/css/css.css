@@ -1,74 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* app-breadcrumb-bg */
-.app-breadcrumb-bg {
-    padding: 3rem 0;
-    background: radial-gradient(rgba(3, 77, 130, 0.9), rgba(3, 77, 130, 0.9)), url('../img/career.png');
+/* hero-header */
+.hero-header {
+    padding: 10rem 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    color: var(--bs-white);
 }
 
-.app-breadcrumb-bg h1 {
+.hero-header h1 {
     font-weight: 700;
-    margin-bottom: 0.50rem;
 }
 
-.app-breadcrumb-bg p,
-.app-breadcrumb-bg h1 {
-    color: var(--bs-white);
-    text-align: center;
-}
-
-.app-breadcrumb-bg p {
+.hero-header p {
     margin-bottom: 0;
 }
 
-.app-breadcrumb-bg .breadcrumb {
-    justify-content: center;
-    margin-bottom: 0;
-}
-
-.app-breadcrumb-bg nav {
-    margin-top: 1rem;
-}
-
-.app-breadcrumb-bg .breadcrumb .breadcrumb-item {
-    color: var(--bs-gray-400);
-}
-
-.app-breadcrumb-bg .breadcrumb .breadcrumb-item,
-.app-breadcrumb .breadcrumb .breadcrumb-item {
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.app-breadcrumb .breadcrumb .breadcrumb-item {
-    color: var(--bs-gray-400);
-}
-
-.app-breadcrumb-bg .breadcrumb .breadcrumb-item a {
-    color: var(--bs-warning);
-    text-decoration: none;
-}
-
-.app-breadcrumb-bg .breadcrumb .breadcrumb-item a:hover {
-    color: var(--bs-white);
-}
-
-.app-breadcrumb .breadcrumb .breadcrumb-item a:hover {
-    color: var(--bs-dark);
+.app-breadcrumb {
+    background-color: var(--bs-warning);
+    padding: 1rem 0;
 }
 
 .app-breadcrumb .breadcrumb {
     margin-bottom: 0;
 }
 
-.app-breadcrumb-bg .breadcrumb .breadcrumb-item+.breadcrumb-item::before,
-.app-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--bs-white) !important;
+.app-breadcrumb .breadcrumb .breadcrumb-item {
+    font-weight: 500;
+    color: var(--bs-white);
+    text-transform: capitalize;
 }
+
+.app-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.app-breadcrumb .breadcrumb .breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.app-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-white);
+}
+
 
 .app-navbar {
     border-bottom: 1px solid var(--bs-border-color);
@@ -81,9 +57,12 @@
 .app-navbar .navbar .navbar-brand img {
     height: 3rem;
 }
+.app-navbar .navbar .navbar-nav{
+    gap: 0 .50rem;
+}
 
 .app-navbar .navbar .nav-link img {
-    height: 2rem;
+    height: 1.50rem;
 }
 
 .app-navbar .navbar .nav-item .nav-link {
@@ -637,6 +616,11 @@
     color: var(--bs-white);
     margin: 0;
 }
+.office-address .card .card-body ul li a{
+    color: var(--bs-white);
+    font-weight: 500;
+    text-decoration: none;
+}
 
 /* end */
 /* client slider */
@@ -709,7 +693,7 @@
 /* footer */
 .footer {
     position: relative;
-    background-image: url(../img/footer-bg.png);
+    background-image: radial-gradient(rgba(3, 77, 130, 0.9), rgba(3, 77, 130, 0.9)), url(../img/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -932,9 +916,27 @@
 .career .card .card-body .job-dec p b {
     color: var(--bs-dark);
 }
-
+/* start */
 .career-page {
     margin: 3rem 0;
+}
+.career-page .web-heading{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.career-page h3{
+    background-color: var(--bs-warning);
+    display: inline-block;
+    padding: .50rem;
+    font-weight: 600;
+    color: var(--bs-white);
+}
+.career-page h5{
+    margin: .50rem 0;
+    font-weight: 600;
+}
+.career-page p{
+    color: var(--bs-secondary);
 }
 
 /*about-us */
