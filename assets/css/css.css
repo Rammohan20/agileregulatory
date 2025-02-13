@@ -25,6 +25,11 @@
     background-color: var(--bs-warning);
     padding: 1rem 0;
 }
+.nav-item.dropdown:last-child .nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+
 
 .app-breadcrumb .breadcrumb {
     margin-bottom: 0;
