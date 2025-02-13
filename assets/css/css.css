@@ -25,6 +25,7 @@
     background-color: var(--bs-warning);
     padding: 1rem 0;
 }
+
 .nav-item.dropdown:last-child .nav-link.dropdown-toggle::after {
     display: none !important;
 }
@@ -1435,47 +1436,63 @@ input[type=number] {
 .partner-blog {
     margin-bottom: 8rem;
 }
+
 /* service-hero */
-.service-hero{
+.service-hero {
     padding: 3rem 0;
     background: radial-gradient(rgba(3, 77, 130, 0.9), rgba(3, 77, 130, 0.9)), url('../img/career.png'), url(../img/why-choose-us.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.service-hero h1{
+
+.service-hero h1 {
     color: var(--bs-white);
     font-weight: 600;
 }
-.service-hero p{
+
+.service-hero p {
     color: var(--bs-white);
-}
-.service-hero .card{
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3 ) !important;
 }
 
-.service-hero .card .card-body h3{
-    color: var(--bs-white);
+.service-hero .card {
+    /* backdrop-filter: blur(10px); */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: var(--bs-border-radius-xl);
+    
 }
-.service-hero .card .card-body form .form-control{
+.service-hero .card .card-body {
+    padding: 2rem;
+}
+.service-hero .card .card-body .card-title {
+    color: var(--bs-white);
+    margin-bottom: 0;
+}
+
+.service-hero .card .card-body form .form-control {
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid var(--bs-white);
     border-radius: 0;
-}
-.service-hero .card .card-body form .form-control:focus{
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    color: var(--bs-white);
     box-shadow: none;
 }
 .service-hero .card .card-body form .form-control::placeholder{
-    color: var(--bs-white);
+    color: rgba(255, 255, 255, 0.60);
 }
+.service-hero .card .card-body .btn{
+    width: 100%;
+    text-transform: uppercase;
+}
+
 /* counter-serivce */
-.counter-serivce{
+.counter-serivce {
     background-color: var(--bs-warning);
 }
-.counter-serivce ul{
+
+.counter-serivce ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -1483,13 +1500,15 @@ input[type=number] {
     gap: 1rem;
     list-style: none;
 }
-.counter-serivce ul li h5{
+
+.counter-serivce ul li h5 {
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
     color: var(--bs-white);
 }
-.counter-serivce ul li p{
+
+.counter-serivce ul li p {
     color: var(--bs-white);
     font-size: 14px;
 }
@@ -1498,36 +1517,53 @@ input[type=number] {
 .services-content {
     margin: 2rem 0;
 }
-.services-content h4{
+
+.services-content h4 {
     margin: .50em 0;
     font-weight: 600;
 }
-.services-content ul li{
+
+.services-content ul li {
     margin: .50rem 0;
 }
-.services-content table{
+
+.services-content table {
     margin: 1rem 0;
 }
-.services-content .accordion-flush>.accordion-item{
+
+.services-content .accordion-flush>.accordion-item {
     border: 2px solid var(--bs-light);
     margin: 1rem 0;
     border-radius: 8px !important;
 }
-.services-content .accordion-flush>.accordion-item .accordion-button{
-    border-radius: 8px !important;
+
+.services-content .accordion .accordion-item .accordion-header .accordion-button {
+    border-radius: 8px;
+    box-shadow: none;
 }
-.services-content .accordion-flush>.accordion-item .accordion-button:focus{
-    box-shadow: none !important;
+
+.services-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
     background-color: var(--bs-blue);
     color: var(--bs-white);
 }
-.services-content table tbody tr td{
+
+/* .services-content .accordion-flush>.accordion-item .accordion-button:focus {
+    box-shadow: none !important;
+    background-color: var(--bs-blue);
+    color: var(--bs-white);
+} */
+
+.services-content table tbody tr td {
     font-size: 14px;
 }
+
 .services-content .sidebar-navbar,
 .services-content .service-form {
     position: sticky;
     top: 100px;
+}
+
+.services-content .sidebar-navbar {
     display: flex;
     flex-direction: column;
     gap: 0.50rem;
@@ -1543,9 +1579,11 @@ input[type=number] {
     font-size: 16px;
     color: var(--bs-secondary);
 }
-.services-content .sidebar-navbar a:hover{
+
+.services-content .sidebar-navbar a:hover {
     color: var(--bs-blue);
 }
+
 .services-content .sidebar-navbar a.active {
     background-color: var(--bs-blue);
     color: var(--bs-white);
@@ -1566,21 +1604,22 @@ input[type=number] {
     text-align: center;
 }
 
-.services-content .card .card-body .card-title{
-  font-size: 18px;
-  font-weight: 600;
+.services-content .card .card-body .card-title {
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.services-content .card .card-body form .form-control{
+.services-content .card .card-body form .form-control {
     border: 0 !important;
     border-bottom: 1px solid var(--bs-blue) !important;
     border-radius: 0;
 }
-.services-content .card .card-body form .form-control:focus{
+
+.services-content .card .card-body form .form-control:focus {
     box-shadow: none;
 }
 
-.services-content .card .card-body form .btn{
+.services-content .card .card-body form .btn {
     padding: 8px 30px !important;
     margin-top: 1rem;
 }
@@ -1619,6 +1658,7 @@ input[type=number] {
 .service-form .card .card-body .card-title {
     margin-bottom: 0;
 }
-.testimonial-service{
+
+.testimonial-service {
     margin-top: 5rem;
 }
