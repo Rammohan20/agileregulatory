@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 
 <body>
     <!-- app-nav -->
-    <div class="app-navbar border-bottom">
+    <div class="app-navbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="app-logo"></a>
@@ -30,60 +31,235 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-center">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="true">
                                 Regulatory
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <div class="container">
+                                    <div class="row g-0">
+                                        <div class="col-lg-3">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <button class="nav-link active" id="v-pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                                    role="tab" aria-controls="v-pills-home" aria-selected="true">BIS
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                                    aria-controls="v-pills-profile" aria-selected="false">CDSCO
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-disabled" type="button" role="tab"
+                                                    aria-controls="v-pills-disabled" aria-selected="false"
+                                                    disabled>Other Services</button>
+                                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                                    aria-controls="v-pills-messages"
+                                                    aria-selected="false">Messages</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings"
+                                                    aria-selected="false">Settings</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 d-flex">
+                                            <div class="menu-tab">
+                                                <div class="tab-content" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-home"
+                                                        role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                                        <div class="row g-0">
+                                                            <h5>Regulatory</h5>
+                                                            <div class="col-lg-6">
+                                                                <ul>
+                                                                    <li><a href="service.html">BIS Certification in India</a></li>
+                                                                    <li><a href="service.html">ISI Mark Certification</a></li>
+                                                                    <li><a href="service.html">BIS FMCS Certification</a></li>
+                                                                    <li><a href="service.html">Hallmark Registration</a></li>
+                                                                    <li><a href="service.html">BIS Registration in Delhi</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                        aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                        aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                        aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                        aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Environmental
+                                aria-expanded="true">
+                                Regulatory
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <div class="container">
+                                    <div class="row g-0">
+                                        <div class="col-lg-3">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <button class="nav-link active" id="v-pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                                    role="tab" aria-controls="v-pills-home" aria-selected="true">BIS
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                                    aria-controls="v-pills-profile" aria-selected="false">CDSCO
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-disabled" type="button" role="tab"
+                                                    aria-controls="v-pills-disabled" aria-selected="false"
+                                                    disabled>Other Services</button>
+                                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                                    aria-controls="v-pills-messages"
+                                                    aria-selected="false">Messages</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings"
+                                                    aria-selected="false">Settings</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 d-flex">
+                                            <div class="menu-tab">
+                                                <div class="tab-content" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-home"
+                                                        role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                                        <div class="row g-0">
+                                                            <h5>Regulatory</h5>
+                                                            <div class="col-lg-6">
+                                                                <ul>
+                                                                    <li><a href="service.html">BIS Certification in India</a></li>
+                                                                    <li><a href="service.html">ISI Mark Certification</a></li>
+                                                                    <li><a href="service.html">BIS FMCS Certification</a></li>
+                                                                    <li><a href="service.html">Hallmark Registration</a></li>
+                                                                    <li><a href="service.html">BIS Registration in Delhi</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                        aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                        aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                        aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                        aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                License
+                                aria-expanded="true">
+                                Regulatory
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <div class="container">
+                                    <div class="row g-0">
+                                        <div class="col-lg-3">
+                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <button class="nav-link active" id="v-pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                                    role="tab" aria-controls="v-pills-home" aria-selected="true">BIS
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                                    aria-controls="v-pills-profile" aria-selected="false">CDSCO
+                                                    Consultant</button>
+                                                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-disabled" type="button" role="tab"
+                                                    aria-controls="v-pills-disabled" aria-selected="false"
+                                                    disabled>Other Services</button>
+                                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                                    aria-controls="v-pills-messages"
+                                                    aria-selected="false">Messages</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings"
+                                                    aria-selected="false">Settings</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 d-flex">
+                                            <div class="menu-tab">
+                                                <div class="tab-content" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-home"
+                                                        role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                                        <div class="row g-0">
+                                                            <h5>Regulatory</h5>
+                                                            <div class="col-lg-6">
+                                                                <ul>
+                                                                    <li><a href="service.html">BIS Certification in India</a></li>
+                                                                    <li><a href="service.html">ISI Mark Certification</a></li>
+                                                                    <li><a href="service.html">BIS FMCS Certification</a></li>
+                                                                    <li><a href="service.html">Hallmark Registration</a></li>
+                                                                    <li><a href="service.html">BIS Registration in Delhi</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                        aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                        aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                        aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                        aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://wa.link/l8lp7l" target="_blank"><img
+                                    src="assets/img/icon/whatsapp.png" alt="whatsapp"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:9121230280"><img src="assets/img/icon/phone.png" alt="call">
+                                9121230280</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Knowledge Centre
+                                <i class='bx bx-menu'></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 ms-auto">
+                                            <li><a class="dropdown-item" href="career.html">Career With Us</a></li>
+                                            <li><a class="dropdown-item" href="partner-with-us.html">Partner With Us</a></li>  
+                                            <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>  
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="assets/img/icon/whatsapp.png" alt="whatsapp"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="assets/img/icon/call.png" alt="call"> 9121230280
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -179,12 +355,26 @@
             <div class="row row-cols-xxl-4 row-cols-xl-4 row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
                 <div class="col">
                     <div class="footer-about">
-                        <img src="assets/img/footer-logo.png" alt="logo" class="footer-logo">
                         <h5>About Us</h5>
+                        <hr>
                         <p>We have been in operation for over 12+ years and have consulted for micro, small, medium
                             &amp;
                             large-scale entrepreneurs in various service like Business license, Regulatory compliance,
                             Startup compliance, Import Export compliance, Environmental compliance etc.</p>
+                        <div class="socail-media">
+                            <ul>
+                                <li><a href="https://www.facebook.com/agileregulatory" target="_blank"><i
+                                            class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.youtube.com/@AgileRegulatory" target="_blank"><i
+                                            class='bx bxl-youtube'></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/agileregulatory/" target="_blank"><i
+                                            class='bx bxl-linkedin-square'></i></a></li>
+                                <li><a href="https://www.instagram.com/agileregulatory/" target="_blank"><i
+                                            class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://x.com/agileregulatory" target="_blank"><i
+                                            class='bx bxl-twitter'></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
@@ -193,16 +383,19 @@
                         <hr>
                         <ul>
                             <li>
-                                <a href="#">BIS Certification in India</a>
+                                <a href="#"><i class='bx bxs-chevron-right me-2'></i>BIS Registration</a>
                             </li>
                             <li>
-                                <a href="#">BIS Certification in India</a>
+                                <a href="#"><i class='bx bxs-chevron-right me-2'></i>CDSCO Registration</a>
                             </li>
                             <li>
-                                <a href="#">blBIS Certification in India</a>
+                                <a href="#"><i class='bx bxs-chevron-right me-2'></i>SPCB Consent</a>
                             </li>
                             <li>
-                                <a href="#">BIS Certification in India</a>
+                                <a href="#"><i class='bx bxs-chevron-right me-2'></i>Business License</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class='bx bxs-chevron-right me-2'></i>Export Licenses</a>
                             </li>
                         </ul>
                     </div>
@@ -213,16 +406,16 @@
                         <hr>
                         <ul>
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about-us.html">About Us</a>
                             </li>
                             <li>
-                                <a href="#">Career With Us</a>
+                                <a href="career.html">Career With Us</a>
                             </li>
                             <li>
-                                <a href="#">Partner With Us</a>
+                                <a href="partner-with-us.html">Partner With Us</a>
                             </li>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="contact-us.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -336,6 +529,8 @@
             </div>
         </div>
     </footer>
+     <!-- talks -->
+     <div class="talks-btn"><a href="#" title="Let's Talk"><img src="assets/img/talk.png" alt="Let's talk"></a></div>
     <!-- link js -->
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/index.js"></script>

@@ -17,3 +17,10 @@
       }, false)
     })
   })()
+  // nav
+  document.querySelectorAll('.nav-pills .nav-link').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent dropdown from closing
+    });
+});
+
