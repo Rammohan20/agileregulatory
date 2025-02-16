@@ -1073,7 +1073,11 @@
 .career-page {
     margin: 3rem 0;
 }
-
+.career-page .card,
+.company-overview .card{
+    border: 0;
+    box-shadow: var(--bs-box-shadow-sm);
+}
 .company-overview {
     margin: 3rem 0 8rem 0;
 }
@@ -1616,6 +1620,36 @@ input[type=number] {
     border: 1px solid linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: var(--bs-border-radius-xl);
 
+}
+.service-hero ul{
+    margin: 2rem 0 0 0;
+    padding: 0;
+    gap: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.service-hero ul li{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--bs-white);
+}
+.service-hero ul li img{
+    height: 3rem;
+}
+.service-hero ul li:first-child{
+    border: 0;
+}
+.service-hero ul li h5{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--bs-white);
+}
+.service-hero ul li p{
+    margin: 0;
+    font-size: 14px;
 }
 
 .service-hero .card .card-body {
