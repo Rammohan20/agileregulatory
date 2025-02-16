@@ -40,7 +40,7 @@
 
 /* hero-header */
 .hero-header {
-    padding: 10rem 0;
+    padding: 4rem 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -528,7 +528,17 @@
 .news-update .card {
     border-radius: var(--bs-border-radius-xl);
     border: 0;
+    overflow: hidden;
     box-shadow: var(--bs-box-shadow);
+}
+
+.news-update .card img {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    width: 100%; /* Ensures it covers the card */
+}
+
+.news-update .card:hover img {
+    transform: scale(1.1);
 }
 
 .news-update .card .card-body .card-title {
