@@ -29,4 +29,10 @@
     .app-navbar .navbar .collapse .navbar-nav .dropdown .dropdown-menu .nav{
         padding: 0 !important;
     }
+    .service-hero .service-icon ul{
+        border: 0 !important;
+    }
+    .counter-serivce ul{
+        border: 0;
+    }
 }

@@ -21,7 +21,40 @@
 </head>
 
 <body>
-    
+    <!-- alk-expert -->
+    <div class="talk-expert">
+        <div class="toast-container position-fixed bottom-0 start-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header d-flex justify-content-between align-items-center">
+                    <h5>Consult an Expert</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <ul>
+                        <li><img src="assets/img/girls.png" alt="girls"></li>
+                        <li>
+                            <h5>
+                                Expertise in Legal Metrology Act Registration</h5>
+                            <p>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>(4.8)
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="chat-btn">
+                        <a href="tel:9121230280" class="btn btn-light rounded-1 px-4">Call Now <img src="assets/img/icon/phone.png"
+                                alt="call now"></a>
+                        <a href="https://wa.link/l8lp7l" class="btn btn-light rounded-1">Chat With Us <img
+                                src="assets/img/icon/chat-with-expert.png" alt="whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end -->
     <!-- app-nav -->
     <div class="app-navbar">
         <nav class="navbar navbar-expand-lg">
@@ -294,29 +327,43 @@
                         Pollution Control Board (CPCB) and the Ministry of Environment & Forests & Climate Change (MoEF
                         &CC). DPCC is responsible for issuing Consent to Establish (CTE) and Consent to Operate (CTO)
                         certificates for the various industries operating under the Delhi territory. </p>
-                        <ul>
-                            <li>
-                                <img src="assets/img/icon/complate-project.png" alt="Projects Completed">
-                                <div>
-                                    <h5>582+</h5>
-                                    <p>Projects Completed</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="assets/img/icon/experienced-professionals.png" alt="Experienced Professionals">
-                                <div>
-                                    <h5>120+</h5>
-                                    <p>Experienced Professionals</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="assets/img/icon/award-won.png" alt="Awards Won Globally">
-                                <div>
-                                    <h5>15+</h5>
-                                    <p>Awards Won Globally</p>
-                                </div>
-                            </li>
-                        </ul>
+                     <div class="service-icon">
+                        <div class="row row-cols-xxl-3 row-cols-xl-3 row-cols-lg-3 row-cols-1 g-3">
+                            <div class="col">
+                                <ul>
+                                    <li><img src="assets/img/google.png" alt="ears-business"></li>
+                                    <li>
+                                        <div>
+                                             <h5>4.8</h5>
+                                             <p>Google Reviews</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><img src="assets/img/google.png" alt="ears-business"></li>
+                                    <li>
+                                        <div>
+                                             <h5>4.8</h5>
+                                             <p>Google Reviews</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><img src="assets/img/google.png" alt="ears-business"></li>
+                                    <li>
+                                        <div>
+                                             <h5>4.8</h5>
+                                             <p>Google Reviews</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                         </div>
+                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-1">
                     <div class="card">
@@ -343,7 +390,7 @@
 
                                     <div class="col">
                                         <div class="form-group">
-                                            <i class='bx bxs-phone-call' ></i>
+                                            <i class='bx bxs-phone-call'></i>
                                             <input type="tel" name="PhoneNumber" id="PhoneNumber" class="form-control"
                                                 placeholder="Phone Number" required>
                                         </div>
@@ -1482,6 +1529,20 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toastLiveExample = document.getElementById('liveToast');
+            // Initialize the toast with autohide set to false
+            const toastBootstrap = new bootstrap.Toast(toastLiveExample, {
+                autohide: false // Prevents auto-closing
+            });
+            // Show the toast automatically after 5 seconds
+            setTimeout(() => {
+                toastBootstrap.show();
+            }, 5000);
+        });
+    </script>
+
 </body>
 
 </html>
