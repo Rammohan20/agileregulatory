@@ -2262,14 +2262,15 @@ input[type=number] {
 .page-contents .accordion-header .accordion-button{
     box-shadow: none;
     background-color: var(--bs-white);
+    font-weight: 600;
 }
 .page-contents .accordion-header .accordion-button.collapse{
-    border-radius: 2px !important;
-    border: 1px solid var(--bs-secondary) !important
+   
 }
 .page-contents .accordion-header .accordion-button{
-   border-bottom: 0;
-   ;
+
+    border: 1px solid var(--bs-secondary);
+    border-width: 1px 1px 1px 1px;
 }
 
 .page-contents .accordion-body{
