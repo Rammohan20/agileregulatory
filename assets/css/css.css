@@ -1471,6 +1471,8 @@
     font-weight: 600;
 }
 
+.benefits-partner
+
 /* partner-form */
 .partner-form .card {
     border-color: var(--bs-warning);
@@ -1530,15 +1532,15 @@ input[type=number] {
 .benefits-partner ul {
     padding: 0;
     list-style: none;
-    display: flex;
-    gap: .5rem;
+    /* display: flex; */
     margin-bottom: 0;
-    flex-wrap: wrap;
 }
 
-.benefits-partner ul li .btn {
-    border-radius: var(--bs-border-radius-pill);
-    font-size: 14px;
+.benefits-partner ul li i {
+    font-size: 20px;
+    color: var(--bs-blue);
+    margin-right: .50rem;
+
 }
 
 .why-us {
@@ -1951,7 +1953,7 @@ input[type=number] {
     color: var(--bs-secondary);
 }
 .blog-details ol li{
-    color: var(--bs-secondary);
+    /* color: var(--bs-secondary); */
    margin-bottom: 1rem;
 }
 .blog-details ol li strong{
@@ -2259,20 +2261,37 @@ input[type=number] {
     font-size: 12px;
 }
 
-.page-contents .accordion-header .accordion-button{
+
+.page-contents .accordion .accordion-item .accordion-header .accordion-button{
     box-shadow: none;
+    font-weight: 600;
     background-color: var(--bs-white);
+    border: 1px solid #aaa !important;
 }
-.page-contents .accordion-header .accordion-button.collapse{
-    border-radius: 2px !important;
-    border: 1px solid var(--bs-secondary) !important
-}
-.page-contents .accordion-header .accordion-button{
-   border-bottom: 0;
-   ;
+.page-contents .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    border-bottom: 0 !important;
 }
 
+
+
 .page-contents .accordion-body{
-    border: 1px solid var(--bs-secondary);
+    border: 1px solid #aaa;
     border-top: 0;
+}
+.blog-social ul{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.blog-social p{
+    margin: 0;
+}
+.blog-social ul li a img{
+  height: 2.50rem;
+}
+.blog-social ul li h5{
+    margin: 0;
 }
