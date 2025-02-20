@@ -638,6 +638,7 @@
 
 .testimonial .owl-carousel .owl-item .card .card-body ul li img {
     height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 }
 
@@ -1759,6 +1760,10 @@ input[type=number] {
 .services-content .accordion .accordion-item .accordion-header .accordion-button {
     border-radius: 8px;
     box-shadow: none;
+    box-shadow: var(--bs-box-shadow-sm);
+}
+.services-content  .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 8px;
 }
 
 .services-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
@@ -2040,6 +2045,9 @@ input[type=number] {
    display: flex;
    justify-content: end;
 }
+.talk-expert .toast-header .btn-close{
+    box-shadow: none;
+}
 .talk-expert .toast-body{
     background-color: var(--bs-blue);
 }
@@ -2267,17 +2275,13 @@ input[type=number] {
     font-weight: 600;
     background-color: var(--bs-white);
 }
-.page-contents .accordion-header .accordion-button.collapse{
+.page-contents .accordion-header .accordion-button:not(.collapse){
     border-radius: 2px !important;
-    border: 1px solid var(--bs-secondary) !important
+    border: 1px solid #aaa !important;
 }
 .page-contents .accordion-header .accordion-button{
-   border-bottom: 0;
-   ;
+   border-bottom: 0 !important;
 }
-
-
-
 .page-contents .accordion-body{
     border: 1px solid #aaa;
     border-top: 0;

@@ -35,4 +35,7 @@
     .counter-serivce ul{
         border: 0;
     }
+    .home-about .card .card-body .card-title{
+         line-height: 1.5;
+    }
 }
