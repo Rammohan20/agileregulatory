@@ -25,6 +25,11 @@
     .major-services .nav{
         flex-direction: row;
         flex-wrap: nowrap;
+        padding-bottom: .50rem;
+
+    }
+    .blog-talk{
+        display: block !important;
     }
     .app-navbar .navbar .collapse .navbar-nav .dropdown .dropdown-menu .nav{
         padding: 0 !important;
@@ -37,5 +42,44 @@
     }
     .home-about .card .card-body .card-title{
          line-height: 1.5;
+    }
+    .footer .copy-right ul{
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    .footer .copy-right ul li a{
+        text-wrap: nowrap;
+    }
+    .service-form{
+        position: unset !important;
+    }
+    .footer .news-letter .card .card-body{
+        padding: 1rem !important;
+    }
+    .leave-comment{
+        margin-top: 0 !important;
+    }
+    .why-choose-us ul h5{
+        font-weight: 500 !important;
+        font-size: 16px !important;
+    }
+    .why-choose-us .card{
+        border-radius: 0 !important;
+    }
+    .news-update{
+        padding: 1rem 0 !important;
+    }
+    .testimonial{
+        padding: 1rem 0 !important;
+    }
+    .single-page-blog .blog-center{
+        padding: 0 !important;
+    }
+    .single-page-blog .right-blog-card ul{
+        padding: 0 !important;
+    }
+    .single-page-blog h5{
+        font-size: 20px !important;
+        margin-bottom: 1rem !important;
     }
 }
