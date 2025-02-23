@@ -28,6 +28,12 @@
         padding-bottom: .50rem;
 
     }
+    .talks-btn{
+        bottom: 30px !important;
+    }
+    .cta-mobile-btn{
+        display: flex !important;
+    }
     .blog-talk{
         display: block !important;
     }
@@ -81,5 +87,9 @@
     .single-page-blog h5{
         font-size: 20px !important;
         margin-bottom: 1rem !important;
+    }
+    .app-navbar .navbar .navbar-nav .dropdown-menu .menu-tab .tab-content>.active{
+        height: 200px;
+        overflow: scroll;
     }
 }

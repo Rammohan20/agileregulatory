@@ -23,4 +23,26 @@
         event.stopPropagation(); // Prevent dropdown from closing
     });
 });
+// end
 
+ //tab-hover-show
+ document.addEventListener("DOMContentLoaded", function () {
+  var tabTriggers = document.querySelectorAll('[data-bs-toggle="pill"]');
+
+  tabTriggers.forEach(function (trigger) {
+      // Activate tab content on hover
+      trigger.addEventListener("mouseenter", function () {
+          var tabTrigger = new bootstrap.Tab(trigger);
+          tabTrigger.show();
+      });
+
+      // Ensure clicking on tab navigates to its href link
+      trigger.addEventListener("click", function (event) {
+          var link = trigger.getAttribute("href");
+          if (link && link !== "#") {
+              window.location.href = link; // Navigate to the URL
+          }
+      });
+  });
+});
+// end
