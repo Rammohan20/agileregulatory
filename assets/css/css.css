@@ -2613,3 +2613,19 @@ input[type=number] {
 .category-testimonial{
     margin-bottom: 8rem;
 }
+.privacy-content{
+    margin: 2rem 0 8rem 0;
+}
+.privacy-content .card{
+    border: 0;
+    box-shadow: var(--bs-box-shadow-sm);
+}
+.privacy-content .card .card-body h2{
+  font-weight: 600;
+}
+.privacy-content .card .card-body .card-title{
+    font-weight: 600;
+}
+.privacy-content .card .card-body .card-text{
+  color: var(--bs-secondary);
+}
